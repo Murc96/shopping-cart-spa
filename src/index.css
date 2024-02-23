@@ -1,0 +1,115 @@
+*,
+body {
+  background-color: grey;
+}
+
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.containerBtn {
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.welcome{
+  margin-top: 20px;
+}
+
+p {
+  background-color: white;
+  margin: 20px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 5px;
+  width: 20%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.cardImg {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 5px 5px lightgray;
+}
+
+.nameContainer {
+  padding: 2px 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+
+.sticky h2 {
+  margin: 0;
+}
+
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+.cart-container {
+  width: 70%;
+  height: 85%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 25px 40px #1687d933;
+}
+
+.menu-point{
+  margin-left: 20px;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-point:hover {
+  text-decoration: underline;
+  color: lightgray;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+  margin-left: 20px;
+}
