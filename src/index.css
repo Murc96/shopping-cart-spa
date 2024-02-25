@@ -1,6 +1,6 @@
 *,
 body {
-  background-color: grey;
+  background-color: white;
 }
 
 
@@ -67,7 +67,7 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  color: #fff;
+  color: Black;
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
@@ -84,20 +84,10 @@ p {
   padding: 0;
 }
 
-
-
-.cart-container {
-  width: 70%;
-  height: 85%;
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0px 25px 40px #1687d933;
-}
-
 .menu-point{
   margin-left: 20px;
   margin-top: 10px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -112,4 +102,94 @@ p {
   align-items: center;
   margin-right: 60px;
   margin-left: 20px;
+}
+
+.cart-product-price:before {
+  content: '$';
+}
+
+h2.cart-headline {
+  font-weight: 100;
+}
+
+label {
+  color: color-label;
+}
+
+.container-cart {
+  margin-top: -45px;
+}
+
+
+.cart-product-title {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid color-border;
+}
+
+.cart-product-price {
+  font-family: font-bold;
+}
+
+.remove-btn {
+  border: 0;
+  padding: 4px 8px;
+  background-color: #c66;
+  color: #fff;
+  font-family: font-bold;
+  font-size: 12px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #a44;
+}
+
+
+.checkout-btn {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+.checkout-btn:hover {
+  background-color: #494;
+}
+
+
+.product-img {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+}
+
+
+.cart-product-container {
+  background-color: #fff; 
+  border: 1px solid lightgray;
+  padding: 10px; 
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-cart {
+  background-color: #fff;
+  padding: 30px;
+}
+
+.cart-product-title,
+.cart-product-price {
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.2;
 }
