@@ -10,7 +10,15 @@ export const ShoppingCartProvider = ({ children }: ShoppingCartProviderProps) =>
   const [cart, setCart] = useState<Product[]>([]);
 
   const addToCart = (product: Product) => {
-    setCart([...cart, product]);
+    const currentCart = cart;
+    const isProductInCart = currentCart.some((item) => item.id === product.id) 
+    if(!isProductInCart) {
+      product.amount = 1;
+      setCart([...cart, product]);
+    } else {
+      product.amount++
+      setCart([...cart]);
+    }
   };
 
   const removeFromCart = (productId: number) => {

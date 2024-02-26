@@ -27,8 +27,15 @@ export default function Router() {
     },
     {
       path: "/cart",
-      element:<ShoppingCartPage />
-    },
+      element: <RootElement />,
+      children: [
+        {
+          index: true,
+          element:<ShoppingCartPage />
+        },
+      ]
+    }
+    
   ]);
   return <RouterProvider router={router} />;
 }
