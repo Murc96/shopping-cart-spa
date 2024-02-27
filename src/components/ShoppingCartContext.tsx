@@ -5,6 +5,9 @@ interface ShoppingCartContextType {
   cart: Product[];
   addToCart: (product: Product) => void;
   removeFromCart: (productId: number) => void;
+  total: (products: Product[]) => number;
+  increaseAmount: (product: Product) => void;
+  decreaseAmount: (product: Product) => void;
 }
 
 // Export the context itself
